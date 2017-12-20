@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd /home/ahmad/Desktop
+        sh '''
 ./scripts.sh'''
       }
     }
