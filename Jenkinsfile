@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''
-./scripts.sh'''
+./home/ahmad/Desktop/script.sh'''
       }
     }
   }
