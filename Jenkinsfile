@@ -1,22 +1,10 @@
 pipeline {
-    agent any 
-
-    stages {
-        stage('Build') { 
-            steps { 
-                sh 'make' 
-            }
-        }
-        stage('Test'){
-            steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'make publish'
-            }
-        }
+  agent any
+  stages {
+    stage('Sonar') {
+      steps {
+        git(url: 'git@bitbucket.org:gaditek_dpi/pdns-recursor-4.0.5.git', branch: 'refs/heads/develop')
+      }
     }
+  }
 }
