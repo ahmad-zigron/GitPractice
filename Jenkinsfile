@@ -12,5 +12,10 @@ pipeline {
         echo 'message is building here'
       }
     }
+    stage('Test') {
+      steps {
+        echo 'It is the Testing Stage'
+      }
+    }
   }
 }
