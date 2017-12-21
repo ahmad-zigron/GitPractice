@@ -26,5 +26,10 @@ pipeline {
         build 'PDNS-Regression'
       }
     }
+    stage('Production') {
+      steps {
+        build 'PDNS-Prod'
+      }
+    }
   }
 }
