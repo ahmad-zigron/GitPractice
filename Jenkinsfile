@@ -14,15 +14,16 @@ pipeline {
         build 'PDNS-Build'
       }
     }
-    stage('Test') {
+    stage('Deploy') {
       steps {
         echo 'It is the Testing Stage'
         build 'PDNS-Stage-Deploy'
       }
     }
-    stage('Deploy') {
+    stage('Test') {
       steps {
         echo 'Deploy From here'
+        build 'PDNS-Regression'
       }
     }
   }
