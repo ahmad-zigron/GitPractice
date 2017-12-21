@@ -11,6 +11,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'message is building here'
+        build 'PDNS-Build'
       }
     }
     stage('Test') {
