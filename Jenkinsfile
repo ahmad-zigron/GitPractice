@@ -17,6 +17,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'It is the Testing Stage'
+        build 'PDNS-Stage-Deploy'
       }
     }
     stage('Deploy') {
