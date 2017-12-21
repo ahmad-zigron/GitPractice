@@ -7,10 +7,9 @@ pipeline {
         echo 'sonar is here'
       }
     }
-    stage('pdns-build') {
+    stage('build') {
       steps {
-        sh './puredns_stag_build.sh'
-        build 'PDNS-Stage-Deploy'
+        echo 'message is building here'
       }
     }
   }
