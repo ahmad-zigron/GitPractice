@@ -5,7 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'sonar is here'
-        sh './scipt.sh'
+        sh './script.sh'
       }
     }
     stage('build') {
