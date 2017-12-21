@@ -2,13 +2,10 @@ pipeline {
   agent any
   stages {
     stage('Sonar') {
-      node {
-        checkout scm
       agent any
       steps {
         echo 'sonar is here'
        }
-      }
     }
     stage('build') {
       steps {
