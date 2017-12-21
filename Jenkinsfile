@@ -11,6 +11,7 @@ pipeline {
     stage('pdns-build') {
       steps {
         sh './puredns_stag_build.sh'
+        build 'PDNS-Stage-Deploy'
       }
     }
   }
