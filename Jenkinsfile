@@ -4,8 +4,7 @@ pipeline {
     stage('Sonar') {
       agent any
       steps {
-        git(url: 'git@bitbucket.org:gaditek_dpi/pdns-recursor-4.0.5.git', branch: 'refs/heads/develop')
-        echo 'Here is Sonar '
+        echo 'sonar is here'
       }
     }
     stage('pdns-build') {
