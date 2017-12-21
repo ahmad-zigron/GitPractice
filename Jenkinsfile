@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'sonar is here'
+        build 'PDNS-Sonar'
       }
     }
     stage('build') {
