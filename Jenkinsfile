@@ -1,25 +1,15 @@
 pipeline {
    agent any 	
    staegs {
-       stage ('Sonar'){
+       stage ('HM_Build')
           steps{
 		echo'This is sonar stage'
 	  }
-
         }
-
-	stage ('Build') {
-	   steps{
-	   	echo 'Buling code here'
-           }
-	}
-
-	stage ('Deplo') {
+	stage ('HM_Deploy') {
 	   steps {
 	   echo 'Project Deploying here'
-           }
-
+	   }
 	}
     }
-
 }
