@@ -1,6 +1,6 @@
 pipeline {
    agent any 	
-   staegs {
+   stages {
        stage ('HM_Build')
           steps{
 		echo'This is sonar stage'
